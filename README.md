@@ -1,6 +1,8 @@
 # My online business card
 My personal website includes a profile, a CV, an interactive photograph of my university, a schedule and a map of Bratislava. The schedule shows the current or next class and the progress of the semester. The map lets you add named points, save them in the browser and calculate distances. I built the website using HTML5, CSS and JavaScript; I use the Leaflet library only on the map page.
 
+**Link:** [https://laushkin1.github.io/PersonalWebsite](https://laushkin1.github.io/PersonalWebsite)
+
 ## Sources and licences
 - Map data: [OpenStreetMap and its contributors](https://www.openstreetmap.org/copyright), data licensed under the Open Database License (ODbL); tiles are loaded from `tile.openstreetmap.org`.
 - Map library: [Leaflet 1.9.4](https://leafletjs.com/), [BSD 2-Clause licence](https://github.com/Leaflet/Leaflet/blob/v1.9.4/LICENSE); the library is loaded from `unpkg.com`.
