@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Bratislava | Ivan Laushkin</title>
+    <meta name="description" content="Explore Bratislava's landmarks on an interactive map. Add a place and measure the straight-line distance between points.">
+    <meta property="og:title" content="Map of Bratislava | Ivan Laushkin">
+    <meta property="og:description" content="Explore Bratislava's landmarks on an interactive map. Add a place and measure the straight-line distance between points.">
+    <meta property="og:image" content="../img/me.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <link rel="icon" href="../favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="../js/script.js" defer></script>
+
+</head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+
+        <header>
+            <div class="container">
+                <a class="monogram" href="../index.html" aria-label="Ivan Laushkin — home page">IL</a>
+                <div>
+                    <p class="name">Ivan Laushkin</p>
+                    <p class="slogan">I'm learning to write clean, well-structured code.</p>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="site-nav" aria-label="Main navigation">
+            <div class="container">
+                <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="main-navigation"><span aria-hidden="true">☰ </span>Menu</button>
+                <ul id="main-navigation">
+                    <li><a href="../index.html">Profile</a></li>
+                    <li><a href="cv.html">Curriculum Vitae</a></li>
+                    <li><a href="university.html">My university</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="map.html" aria-current="page">Map of Bratislava</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main id="main-content" class="container">    	
+            <h1>Map of Bratislava</h1>
+            <p>Explore the landmarks of Bratislava's Old Town. Select places on the map or add your own to measure the straight-line distance between them.</p>
+
+            <section>
+
+                <div id="map" role="region" tabindex="0" aria-label="Interactive map of Bratislava" aria-describedby="map-help"></div>
+
+                <form id="map-controls">
+                    <label>
+                        Starting point
+                        <select name="point">
+                            <option value="castle">Bratislava Castle</option>
+                            <option value="michaels-gate">Michael's Gate</option>
+                            <option value="st-martins-cathedral">St. Martin's Cathedral</option>
+                            <option value="old-town-hall">Old Town Hall</option>
+                            <option value="blue-church">Blue Church</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Destination
+                        <select name="destination">
+                            <option value="castle">Bratislava Castle</option>
+                            <option value="michaels-gate">Michael's Gate</option>
+                            <option value="st-martins-cathedral">St. Martin's Cathedral</option>
+                            <option value="old-town-hall">Old Town Hall</option>
+                            <option value="blue-church">Blue Church</option>
+                        </select>
+                    </label>
+
+                    <button type="submit">Show distance</button>
+                </form>
+
+                <p id="map-status" role="status">Select a starting point and a destination.</p>
+            </section>
+
+            <section>
+                <h2>Map sources</h2>
+                <p>I use map data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> and the <a href="https://leafletjs.com/">Leaflet</a> library.</p>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="container">
+                <div>
+                    <p><strong>My contact information</strong></p>
+                    <address>
+                        <a href="mailto:laushkinivan1@gmail.com">laushkinivan1@gmail.com</a><span aria-hidden="true"> · </span><a href="tel:+421950546053">+421 950 546 053</a><br>
+                        Bratislava, Slovakia
+                    </address>
+                </div>
+                <div>
+                    <p>© 2026 Ivan Laushkin</p>
+                    <div>
+                    <a href="https://github.com/laushkin1">GitHub</a><a href="https://linkedin.com/in/laushkin1/">LinkedIn</a><a href="https://github.com/laushkin1/PersonalWebsite">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

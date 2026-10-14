@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Ivan Laushkin</title>
+    <meta name="description" content="My schedule at FEI STU in Bratislava.">
+    <meta property="og:title" content="Schedule | Ivan Laushkin">
+    <meta property="og:description" content="My schedule at FEI STU in Bratislava.">
+    <meta property="og:image" content="../img/me.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <link rel="icon" href="../favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+
+        <header>
+            <div class="container">
+                <a class="monogram" href="../index.html" aria-label="Ivan Laushkin — home page">IL</a>
+                <div>
+                    <p class="name">Ivan Laushkin</p>
+                    <p class="slogan">I'm learning to write clean, well-structured code.</p>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="site-nav" aria-label="Main navigation">
+            <div class="container">
+                <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="main-navigation"><span aria-hidden="true">☰ </span>Menu</button>
+                <ul id="main-navigation">
+                    <li><a href="../index.html">Profile</a></li>
+                    <li><a href="cv.html">Curriculum Vitae</a></li>
+                    <li><a href="university.html">My university</a></li>
+                    <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+                    <li><a href="map.html">Map of Bratislava</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main id="main-content" class="container">
+
+            <h1 id="schedule-heading">When you can reach me</h1>
+
+            <section class="card schedule-status" aria-labelledby="schedule-status-heading">
+                <div>
+                    <p class="eyebrow" id="schedule-clock">Current time in Bratislava</p>
+                    <h2 id="schedule-status-heading">Right now</h2>
+                    <p id="schedule-status" role="status">With JavaScript enabled, I will show my current and next class here.</p>
+                </div>
+            </section>
+
+            <section aria-labelledby="timetable-heading">
+                <div>
+                    <div>
+                        <p class="eyebrow">Winter semester 2026/2027</p>
+                        <h2 id="timetable-heading">My schedule</h2>
+                    </div>
+                    <div class="schedule-filters" role="group" aria-label="Filter schedule" hidden>
+                        <button class="button button-secondary" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="button button-secondary" type="button" data-filter="lecture" aria-pressed="false">Lectures</button>
+                        <button class="button button-secondary" type="button" data-filter="exercise" aria-pressed="false">Exercises</button>
+                    </div>
+                </div>
+                <ul class="schedule-legend" aria-label="Class types">
+                    <li><span class="legend-dot legend-lecture" aria-hidden="true"></span>Lecture</li>
+                    <li><span class="legend-dot legend-exercise" aria-hidden="true"></span>Exercise</li>
+                    <li><span class="legend-dot legend-sport" aria-hidden="true"></span>Physical Education</li>
+                </ul>
+                <div class="schedule-scroll" role="region" aria-label="Weekly schedule from 7:00 to 21:00" tabindex="0">
+                    <table id="schedule-table" aria-describedby="schedule-note">
+                        <caption>My classes from Monday to Friday, 7:00-21:00</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">7:00-8:00</th>
+                                <th scope="col">8:00-9:00</th>
+                                <th scope="col">9:00-10:00</th>
+                                <th scope="col">10:00-11:00</th>
+                                <th scope="col">11:00-12:00</th>
+                                <th scope="col">12:00-13:00</th>
+                                <th scope="col">13:00-14:00</th>
+                                <th scope="col">14:00-15:00</th>
+                                <th scope="col">15:00-16:00</th>
+                                <th scope="col">16:00-17:00</th>
+                                <th scope="col">17:00-18:00</th>
+                                <th scope="col">18:00-19:00</th>
+                                <th scope="col">19:00-20:00</th>
+                                <th scope="col">20:00-21:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td colspan="4"></td>
+                                <td colspan="2" data-type="sport" data-day="1" data-start="11:00" data-end="12:50">
+                                    <div>
+                                        <strong>Physical Education 5</strong>
+                                        <span>11:00-12:50 · ŠIP</span>
+                                        <span>M. Jeleň</span>
+                                    </div>
+                                </td>
+                                <td colspan="2" data-type="exercise" data-day="1" data-start="13:00" data-end="14:50">
+                                    <div>
+                                        <strong>Web Technologies 1</strong>
+                                        <span>13:00-14:50 · c137</span>
+                                        <span>K. Žáková</span>
+                                    </div>
+                                </td>
+                                <td colspan="2" data-type="lecture" data-day="1" data-start="15:00" data-end="16:50">
+                                    <div>
+                                        <strong>Linear Algebra 2</strong>
+                                        <span>15:00-16:50 · cd300</span>
+                                        <span>J. Šiagiová</span>
+                                    </div>
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td colspan="3"></td>
+                                <td colspan="2" data-type="lecture" data-day="2" data-start="10:00" data-end="11:50">
+                                    <div>
+                                        <strong>Web Technologies 1</strong>
+                                        <span>10:00-11:50 · cd150</span>
+                                        <span>K. Žáková</span>
+                                    </div>
+                                </td>
+                                <td colspan="3"></td>
+                                <td colspan="2" data-type="lecture" data-day="2" data-start="15:00" data-end="16:50">
+                                    <div>
+                                        <strong>Software Engineering</strong>
+                                        <span>15:00-16:50 · cd300</span>
+                                        <span>O. Gallo</span>
+                                    </div>
+                                </td>
+                                <td data-type="exercise" data-day="2" data-start="17:00" data-end="17:50">
+                                    <div>
+                                        <strong>Software Engineering</strong>
+                                        <span>17:00-17:50 · cd300</span>
+                                        <span>O. Gallo</span>
+                                    </div>
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td colspan="6"></td>
+                                <td colspan="2" data-type="lecture" data-day="3" data-start="13:00" data-end="14:50">
+                                    <div>
+                                        <strong>Web Technologies 1</strong>
+                                        <span>13:00-14:50 · cd150</span>
+                                        <span>K. Žáková</span>
+                                    </div>
+                                </td>
+                                <td colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td colspan="3"></td>
+                                <td data-type="exercise" data-day="4" data-start="10:00" data-end="10:50">
+                                    <div>
+                                        <strong>Software Engineering</strong>
+                                        <span>10:00-10:50 · c137</span>
+                                        <span>M. Nehéz</span>
+                                    </div>
+                                </td>
+                                <td colspan="10"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td colspan="3"></td>
+                                <td colspan="2" data-type="exercise" data-day="5" data-start="10:00" data-end="11:50">
+                                    <div>
+                                        <strong>Linear Algebra 2</strong>
+                                        <span>10:00-11:50 · ab35</span>
+                                        <span>P. Viceník</span>
+                                    </div>
+                                </td>
+                                <td colspan="9"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p id="schedule-note">Empty cells mean there are no classes. Use the buttons to select all classes, lectures or exercises.</p>
+                    <p id="schedule-empty" role="status" hidden>I have no classes for this filter.</p>
+                </div>
+            </section>
+            
+            <section class="card" aria-labelledby="semester-heading">
+                <div>
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">Teaching progress</p>
+                            <h2 id="semester-heading">How much of the semester has passed</h2>
+                        </div>
+                        <strong id="semester-percentage">—</strong>
+                    </div>
+                </div>
+                <p id="semester-dates">Winter semester teaching period: 14 September 2026 - 11 December 2026.</p>
+                <progress id="semester-progress" max="100" value="0" aria-label="Percentage of the semester completed">0 %</progress>
+                <p id="semester-status">With JavaScript enabled, I will show the semester progress.</p>
+            </section>            
+        </main>
+
+
+        <footer>
+            <div class="container">
+                <div>
+                    <p><strong>My contact information</strong></p>
+                    <address>
+                        <a href="mailto:laushkinivan1@gmail.com">laushkinivan1@gmail.com</a><span aria-hidden="true"> · </span><a href="tel:+421950546053">+421 950 546 053</a><br>
+                        Bratislava, Slovakia
+                    </address>
+                </div>
+                <div>
+                    <p>© 2026 Ivan Laushkin</p>
+                    <div>
+                    <a href="https://github.com/laushkin1">GitHub</a><a href="https://linkedin.com/in/laushkin1/">LinkedIn</a><a href="https://github.com/laushkin1/PersonalWebsite">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
